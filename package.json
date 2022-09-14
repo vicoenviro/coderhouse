@@ -1,0 +1,23 @@
+{
+  "name": "desafio2",
+  "version": "1.0.0",
+  "description": "servidor con express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vicoenviro/coderhouse.git"
+  },
+  "author": "Victor Villarroel",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.5",
+    "express": "^4.18.1"
+  },
+  "bugs": {
+    "url": "https://github.com/vicoenviro/coderhouse/issues"
+  },
+  "homepage": "https://github.com/vicoenviro/coderhouse#readme"
+}
