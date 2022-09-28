@@ -2,7 +2,7 @@
 
 ## Archivo JSON de POSTMAN
 
-El archivo para importar esta en la raiz del proyecto con el nombre Desafio3.postman_collection.json
+El archivo para importar esta en la raiz del proyecto con el nombre Desafio4.postman_collection.json
 
 ## Formulario registro productos
 
