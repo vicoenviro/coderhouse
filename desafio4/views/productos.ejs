@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+</head>
+<body> 
+  <h1>Vista de productos</h1>
+  <table>
+    <tr>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Imagen</th>
+    </tr>
+    <% if (isEmpty) { %>
+      <tr>
+        <td>No hay Productos</td>
+      </tr>
+    <% } %>
+    <% productos.forEach(function(prd) { %>
+      <tr>
+        <td><%= prd.title %></td>
+        <td><%= prd.preci %></td>
+        <td>
+        <% if(prd.thumbnail.length > 0){ %>
+          <img src="<%= prd.thumbnail %>" alt="<%= prd.thumbnail %>">
+        <% } else{ %>  
+            Sin Imagen
+        <% } %>
+        </td>
+      </tr>
+    <% }); %>
+  </table>
+  <form action="/" method="get">
+    <button type="submit">Volver</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Personas</h1>
+  <form action="/personas" method="post">
+    <input type="text" name="nombre" id="nombre" placeholder="nombre">
+    <input type="text" name="apellido" id="apellido" placeholder="apellido">
+    <input type="text" name="edad" id="edad" placeholder="edad">
+    <button type="submit">Enviar</button>
+  </form>
+  <h1>Historial</h1>
+  <table>
+    <tr>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Edad</th>
+    </tr>
+    <% if (isEmpty) { %>
+      <tr>
+        <td>No hay Personas</td>
+      </tr>
+    <% } %>
+    <% personas.forEach(function(usr) { %>
+      <tr>
+        <td><%= usr.nombre %></td>
+        <td><%= usr.apellido %></td>
+        <td><%= usr.edad %></td>
+      </tr>
+    <% }); %>
+  </table>
+</body>
+</html>
