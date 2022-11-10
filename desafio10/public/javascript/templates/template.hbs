@@ -1,0 +1,18 @@
+{{#if isEmpty }}
+  <tr>
+    <td>No hay Productos</td>
+  </tr>
+{{/if}}
+{{#each productos}}
+  <tr>
+    <td>{{this.title}}</td>
+    <td>{{this.preci}}</td>
+    <td>
+      {{#if this.thumbnail }}
+        <img src="{{this.thumbnail}}" alt="{{this.thumbnail}}">
+      {{else}}
+        Sin Imagen
+      {{/if}}
+    </td>
+  </tr>
+{{/each}}

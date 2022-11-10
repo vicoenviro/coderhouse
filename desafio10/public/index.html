@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/socket.io/socket.io.js"></script>  
+  <title>Centro de Mensajes</title>
+</head>
+<body>
+
+<h1>Centro de Mensajes</h1>
+
+<form id="form-message">
+  <input type="text" name="input-mail" id="input-mail" placeholder="diego@outlook.com" required="true"> 
+  <input type="text" name="input-nombre" id="input-nombre" placeholder="Nombre"> 
+  <input type="text" name="input-apellido" id="input-apellido" placeholder="Apellido">
+  <input type="text" name="input-edad" id="input-edad" placeholder="Edad">
+  <input type="text" name="input-alias" id="input-alias" placeholder="Alias">
+  <input type="text" name="input-avatar" id="input-avatar" placeholder="Avatar">
+  <input type="text" name="input-message" id="input-message" placeholder="Escribe un mensaje">
+  <button type="submit">Enviar!</button>
+  <ul id="show-message"></ul>
+</form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+<script src="/javascript/script.js"></script>
+</body>
+</html>
