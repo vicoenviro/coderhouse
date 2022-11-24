@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Login</title>
+</head>
+<body>
+  <h1>Registro Usuario</h1>
+  <form action="/api/auth/sign-up" method="POST">
+    <input type="text" name="fistname" id="fistname" placeholder="primer nombre"> 
+    <input type="text" name="lastname" id="lastname" placeholder="Apellido"> 
+    <input type="password" name="password" id="password" placeholder="Ingrese su password"> 
+    <input type="text" name="age" id="age" placeholder="Edad"> 
+    <input type="text" name="phone" id="phone" placeholder="Telefono">
+    <input type="text" name="email" id="email" placeholder="Correo">
+    <button type="submit">Enviar</button>
+    <a href="/index.html">Login</a>
+  </form>
+</body>
+</html>
